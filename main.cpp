@@ -1,6 +1,6 @@
 #include <QtGui/QGuiApplication>
 #include "qtquick2applicationviewer.h"
-#include <./OSC/include/OSC_MIDIOutput.h>
+//#include <OSC/include/OSC_MIDIOutput.h>
 #include <conio.h>
 
 int main(int argc, char *argv[])
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     viewer.setMainQmlFile(QStringLiteral("qml/SF2Universe/main.qml"));
     viewer.showExpanded();
 
-    printf("--- The OSC Tutorial ---\n\n");
+	/*printf("--- The OSC Tutorial ---\n\n");
 
         OSC_MIDIOutput midiout;
         OSC_MIDIMessage msg;
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         midiout.SendMIDIMessage(msg);
         printf("Hit a key to exit\n");
         getch();
-        midiout.Close();
+		midiout.Close();*/
 
 
     return app.exec();

@@ -17,20 +17,3 @@ SOURCES += main.cpp
 include(qtquick2applicationviewer/qtquick2applicationviewer.pri)
 qtcAddDeployment()
 
-#change the runtime librairy used to multi thread
-#Release:QMAKE_CXXFLAGS += /MT
-#Debug:QMAKE_CXXFLAGS += /MTd
-
-HEADERS += \
-    ./OSC/include/OSC_Defines.h \
-    ./OSC/include/OSC_MIDIInput.h \
-    ./OSC/include/OSC_MIDIMessage.h \
-    ./OSC/include/OSC_MIDIOutput.h \
-    ./OSC/include/OSC_MultiThreading.h \
-    ./OSC/include/OSC_SFManager.h \
-    ./OSC/include/OSC_Timer.h \
-    ./OSC/include/sfman.h
-
-
-
-
